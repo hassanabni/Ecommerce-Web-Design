@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inter;
+}
+body{
+  background-color: #efeeee;
+  position: absolute;
+
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+
+/* Navbar started */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 83vw;
+  background-color: white;
+}
+.logo {
+  margin: 8px;
+}
+.input-box {
+  margin: 10px;
+  display: flex;
+  width: 665px;
+  height: 40px;
+  border: 2px solid #0d6efd;
+  border-radius: 5px;
+}
+.input-box input {
+  width: 441px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.side-bar {
+  height: 41px;
+  cursor: pointer;
+}
+.side-bar ul {
+  display: flex;
+}
+.side-bar ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #8b96a5;
+  gap: 7px;
+  margin: 1px 2px;
+  padding: 0px 5px;
+}
+.side-bar li img {
+  height: 20px;
+  width: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  width: 141px;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0px solid #0d6efd;
+  margin-left: -1px;
+  border-left: 1px solid #0d6efd;
+  text-align: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 141px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f8f8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown img {
+  margin-left: 17px;
+}
+.search {
+  background-color: #0d6efd;
+  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+.horizontal-line {
+  width: 100vw; /* Full viewport width */
+  height: 1px; /* 1px height for the line */
+  background-color: rgb(226, 224, 224); /* Line color */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+/* all categories mentioned section  */
+.category-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.category-section ul {
+  display: flex;
+  margin-right: 163px;
+  margin-top: 15px;
+}
+.category-section ul li {
+  margin: 10px 14px;
+  list-style: none;
+  cursor: pointer;
+}
+.currency {
+  margin-right: 28px;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.shipping {
+  margin-right: 54px;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.bg-color{
+  background-color: #efeeee;
+}
+
+@media (min-width: 1100px) {
+    /* Navbar adjustments */
+    .navbar {
+      justify-content: space-between;
+      width: 80vw;
+      margin: auto;
+      
+    }
+  
+    .logo img {
+      height: 50px;
+    }
+  
+    .input-box {
+      width: 50%;
+      height: 50px;
+    }
+  
+    .input-box input {
+      font-size: 16px;
+    }
+  
+    .dropbtn {
+      font-size: 14px;
+      padding: 12px 8px;
+    }
+  
+    .search {
+      font-size: 14px;
+      height: 46px;
+    }
+  
+    .side-bar ul li {
+      font-size: 14px;
+    }
+  
+    /* Category section adjustments */
+    .category-section {
+      padding: 10px 2px;
+      justify-content: space-between;
+      width: 87vw;
+      margin: auto;
+      
+    }
+  
+    .category-section ul li {
+      font-size: 16px;
+      margin: 0 20px;
+    }
+  
+    .btns button {
+      font-size: 14px;
+    }
+}
