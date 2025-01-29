@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gridview.css">
+</head>
+<body>
+    <div class="container">
+     <!-- Navbar -->
+      <header>
+     <div class="navbar">
+        <div class="logo">
+          <a href="homepage.html">
+            <img src="assets/logo-colored.png" alt="" />
+          </a>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Search" />
+          <div class="dropdown">
+            <button class="dropbtn">
+              All Category
+              <img src="assets/dropdown-img.png" alt="" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a href="#">Option 3</a>
+            </div>
+          </div>
+          <button class="search">Search</button>
+        </div>
+
+        <div class="side-bar">
+          <ul>
+            <li><img src="assets/profile-icon.png" alt="" />Profile</li>
+            <li><img src="assets/messages-icon.png" alt="" />Message</li>
+            <li><img src="assets/order-icon.png" alt="" />Orders</li>
+            <li><img src="assets/my-cart-icon.png" alt="" />My cart</li>
+          </ul>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+    </header>
+      <section>
+        <!-- all categories mentioned section -->
+        <div class="category-section">
+          <ul>
+            <img src="assets/menu-icon.png" alt="" />
+            <li><a href="gridview.html">All Category</a></li>
+            <li><a href="gridview.html">Hot offers</a></li>
+            <li><a href="gridview.html">Gift boxes</a></li>
+            <li><a href="gridview.html">Projects</a></li>
+            <li><a href="gridview.html">Main item</a></li>
+            <li><a href="gridview.html">Help</a><img style="margin-left: 10px;" src="assets/dropdown-img.png" alt="" /></li>
+          </ul>
+          <div class="btns">
+            <button class="currency">
+              English, USD <img src="assets/dropdown-img.png" alt="" />
+            </button>
+            <button class="shipping">
+              Ship to <img src="assets/belgium-flag.png" alt="" />
+              <img src="assets/dropdown-img.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="horizontal-line"></div>
+
+      <!-- background grey starts from here -->
+      <div class="bg-grey">
+            <div class="selected-categories">
+              <p id="selected-categories-p">Home > Clothings > Men's wear > Summer clothing > </p>
+            </div>
+
+            <!-- categories side bar -->
+             <div class="product-listing">
+            <div class="sidebar-boxes">
+              <!-- Categories Section -->
+               
+              <div class="section border-sidebar">
+                <div class="heading-box">
+                <h3>Category</h3>
+                <img src="assets/dropdown-img.png" alt="Toggle" class="toggle-icon" />
+              </div>
+                <ul>
+                  <li><a href="#">Mobile accessory</a></li>
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Smartphones</a></li>
+                  <li><a href="#">Modern tech</a></li>
+                  <li style="color: blue;"><a href="#">See all</a></li>
+                </ul>
+              </div>
+        
+              <!-- Brands Section -->
+              <div class="section border-sidebar">
+                <div class="heading-box">
+                <h3>Brands</h3>
+                <img src="assets/dropdown-img.png" alt="Toggle" class="toggle-icon" />
+                </div>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="samsung" />
+                    <label for="samsung">Samsung</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="apple" />
+                    <label for="apple">Apple</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="huawei" />
+                    <label for="huawei">Huawei</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="poco" />
+                    <label for="poco">Poco</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="lenovo" />
+                    <label for="lenovo">Lenovo</label>
+                  </li>
+                  <li><a href="#">See all</a></li>
+                </ul>
+              </div>
+        
+              <!-- Features Section -->
+              <div class="section border-sidebar">
+                <div class="heading-box ">
+                <h3>Features</h3><img src="assets/dropdown-img.png" alt="Toggle" class="toggle-icon" />
+              </div>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="metallic" />
+                    <label for="metallic">Metallic</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="plastic-cover" />
+                    <label for="plastic-cover">Plastic cover</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="8gb-ram" />
+                    <label for="8gb-ram">8GB Ram</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="super-power" />
+                    <label for="super-power">Super power</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="large-memory" />
+                    <label for="large-memory">Large Memory</label>
+                  </li>
+                </ul>
+              </div>
+        
+              <!-- Price Range Section -->
+              <div class="section border-sidebar">
+                <div class="heading-box">
+                <h3>Price range</h3>
+                <img src="assets/dropdown-img.png" alt="Toggle" class="toggle-icon" />
+              </div>
+              <ul>
+                <input type="range" min="0" max="500" step="10" />  
+                  <div class="price-values">
+                  <span>$0</span>
+                  <span>$500</span>
+                </div>
+                </ul>
+              </div>
+              <!-- Condition Section -->
+      <div class="section border-sidebar">
+      <div class="heading-box">
+        <h3>Condition</h3><img src="assets/dropdown-img.png" alt="Toggle" class="toggle-icon" />
+      </div>
+        <ul>
+          <li>
+            <input type="checkbox" id="new" />
+            <label for="new">New</label>
+          </li>
+          <li>
+            <input type="checkbox" id="used" />
+            <label for="used">Used</label>
+          </li>
+          <li>
+            <input type="checkbox" id="refurbished" />
+            <label for="refurbished">Refurbished</label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ratings Section -->
+      <div class="section border-sidebar">
+        <div class="heading-box">
+        <h3>Ratings</h3><img src="assets/dropdown-img.png" alt="Toggle" class="toggle-icon" />
+      </div>
+        <ul>
+          <li>
+            <input type="checkbox" id="5star" />
+            <label for="5star">5 Star</label>
+          </li>
+          <li>
+            <input type="checkbox" id="4star" />
+            <label for="4star">4 Star</label>
+          </li>
+          <li>
+            <input type="checkbox" id="3star" />
+            <label for="3star">3 Star</label>
+          </li>
+          <li>
+            <input type="checkbox" id="2star" />
+            <label for="2star">2 Star</label>
+          </li>
+          <li>
+            <input type="checkbox" id="1star" />
+            <label for="1star">1 Star</label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Manufacturer Section -->
+      <div class="section border-sidebar">
+        <div class="heading-box">
+        <h3>Manufacturer</h3><img src="assets/dropdown-img.png" alt="Toggle" class="toggle-icon" />
+      </div>
+        <ul>
+          <li>
+            <input type="checkbox" id="sony" />
+            <label for="sony">Sony</label>
+          </li>
+          <li>
+            <input type="checkbox" id="lg" />
+            <label for="lg">LG</label>
+          </li>
+          <li>
+            <input type="checkbox" id="dell" />
+            <label for="dell">Dell</label>
+          </li>
+          <li>
+            <input type="checkbox" id="hp" />
+            <label for="hp">HP</label>
+          </li>
+        </ul>
+      </div>
+      </div>
+      
+      <div class="product-container">
+        <!-- Top Filters -->
+        <div class="filters-bar">
+          <p>12,911 items in <b>Mobile accessory</b> </p>
+          <div class="filters">
+            <button class="filter-button"><input type="checkbox" name="" id="">Verified Only</button>
+            <select class="filter-select">
+              <option>Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest</option>
+            </select>
+            <div class="view-options">
+              <button class="grid-view active"><img src="assets/gridview.png" alt=""></button> <!-- Grid view -->
+              <button class="list-view">
+                <a href="listview.html">
+                  <img src="assets/listview.png" alt="">
+                </a>
+              </button> <!-- List view -->
+            </div>
+          </div>
+        </div>
+        <div class="search-filters m-3">
+          <button>Samsung <img src="assets/cancel-icon.png" alt=""></button>
+          <button>Apple <img src="assets/cancel-icon.png" alt=""></button>
+          <button>Oppo <img src="assets/cancel-icon.png" alt=""></button>
+          <button>Moco <img src="assets/cancel-icon.png" alt=""></button>
+          <p>Clear all filters</p>
+        </div>
+      
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <!-- Example Product -->
+          <div class="product-card">
+            <img src="assets/camera.png" alt="Product Image" class="product-image" />
+            <div class="grey-line"></div>
+            <p class="product-price">
+              <span class="current-price">$99.50</span>
+              <span class="original-price">$128.00</span>
+            </p>
+            <p class="product-rating">
+              <span class="stars">★★★★☆</span> 7.5 • 154 orders
+            </p>
+            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+          </div>
+          <div class="product-card">
+            <img src="assets/camera.png" alt="Product Image" class="product-image" />
+            <div class="grey-line"></div>
+            <p class="product-price">
+              <span class="current-price">$99.50</span>
+              <span class="original-price">$128.00</span>
+            </p>
+            <p class="product-rating">⭐⭐⭐⭐⭐ 5</p>
+            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+          </div>
+          <div class="product-card">
+            <img src="assets/phone.png" alt="Product Image" class="product-image" />
+            <div class="grey-line"></div>
+            <p class="product-price">
+              <span class="current-price">$99.50</span>
+              <span class="original-price">$128.00</span>
+            </p>
+            <p class="product-rating">⭐⭐⭐⭐⭐ 5</p>
+            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+          </div>
+          <div class="product-card">
+            <img src="assets/phone.png" alt="Product Image" class="product-image" />
+            <div class="grey-line"></div>
+            <p class="product-price">
+              <span class="current-price">$99.50</span>
+              <span class="original-price">$128.00</span>
+            </p>
+            <p class="product-rating">⭐⭐⭐⭐⭐ 5</p>
+            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+          </div>
+          <div class="product-card">
+            <img src="assets/camera.png" alt="Product Image" class="product-image" />
+            <div class="grey-line"></div>
+            <p class="product-price">
+              <span class="current-price">$99.50</span>
+              <span class="original-price">$128.00</span>
+            </p>
+            <p class="product-rating">⭐⭐⭐⭐⭐ 5</p>
+            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+          </div>
+          <div class="product-card">
+            <img src="assets/headphones.png" alt="Product Image" class="product-image" />
+            <div class="grey-line"></div>
+            <p class="product-price">
+              <span class="current-price">$99.50</span>
+              <span class="original-price">$128.00</span>
+            </p>
+            <p class="product-rating">⭐⭐⭐⭐⭐ 5</p>
+            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+          </div>
+          <div class="product-card">
+            <img src="assets/phone.png" alt="Product Image" class="product-image" />
+            <div class="grey-line"></div>
+            <p class="product-price">
+              <span class="current-price">$99.50</span>
+              <span class="original-price">$128.00</span>
+            </p>
+            <p class="product-rating">⭐⭐⭐⭐⭐ 5</p>
+            <p class="product-title">GoPro HERO6 4K Action Camera - Black</p>
+          </div>
+          
+          <!-- Repeat similar product cards for the grid -->
+        </div>
+      
+        <!-- Pagination -->
+        <div class="pagination">
+          <span>Show</span>
+          <select class="items-per-page">
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+          </select>
+          <div class="page-numbers">
+            <button class="page-button">1</button>
+            <button class="page-button">2</button>
+            <button class="page-button">3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe-section">
+      <h3>Subscribe on our newsletter</h3>
+      <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+      <div class="subscribe-box">
+        <img class="input-icon" src="assets/email-icon.png" alt="">
+        <input type="text" placeholder="Email">
+        <button>Subscribe</button>
+      </div>
+     </div>
+     
+     <footer>
+      <div class="footer-box">
+
+        <div class="social-media-icons">
+          <img width="" src="assets/logo-colored.png" alt="">
+          <p>Best information about the company gies here but now lorem ipsum is</p>
+          <div class="icons">
+            <li><img src="assets/insta-icon.png" alt=""></li>
+            <li><img src="assets/yt-icon.png" alt=""></li>
+            <li><img src="assets/facebook-icon.png" alt=""></li>
+            <li><img src="assets/twitter-icon.png" alt=""></li>
+            <li><img src="assets/linkedin-icon.png" alt=""></li>
+          </div>
+        </div>
+        <div class="headings">
+          <div class="content">
+              <div class="about">
+                  <h4>About</h4>
+                  <ul>
+                      <li>About us</li>
+                      <li>Find store</li>
+                      <li>Categories</li>
+                      <li>Blogs</li>
+                  </ul>
+              </div>
+              <div class="partnership">
+                  <h4>Partnership</h4>
+                  <ul>
+                      <li>About us</li>
+                      <li>Find store</li>
+                      <li>Categories</li>
+                      <li>Blogs</li>
+                  </ul>
+              </div>
+              <div class="information">
+                  <h4>Information</h4>
+                  <ul>
+                      <li>Money refund</li>
+                      <li>Shipping</li>
+                      <li>Contact us</li>
+                      <li>Blogs</li>
+                  </ul>
+              </div>
+              <div class="for-users">
+                  <h4>For users</h4>
+                  <ul>
+                      <li>Login</li>
+                      <li>Register</li>
+                      <li>Settings</li>
+                      <li>My orders</li>
+                  </ul>
+              </div>
+              <div class="get-app">
+                  <h4>Get app</h4>
+                  <img src="assets/appstore-button.png" alt="">
+                  <img src="assets/android-button.png" alt="">
+              </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="copyright-footer">
+          <p>&copy 2023 Ecommerce.</p>
+          <div><img src="assets/usa-flag.png" alt="">English <img src="assets/dropdown-img.png" alt=""></div>
+      </div>
+      /<div>
+     </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -135,6 +135,10 @@ body{
   list-style: none;
   cursor: pointer;
 }
+.category-section ul li a{
+  text-decoration: none;
+  color: black;
+}
 .currency {
   margin-right: 28px;
   background: none;
@@ -474,9 +478,13 @@ font-weight: bolder;
     margin-bottom: 4px;
     cursor: pointer;
     font-size: 14px;
-    color: #333;
     border-radius: 4px;
+  }
+  .categories-names button a{
+  color: #333;
+  text-decoration: none;
 }
+
 .categories-names button:hover {
   background-color: #e3f2fd;
 }
