@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="product-detail.css">
+</head>
+<div class="container">
+<!-- Navbar -->
+  <header>
+    <div class="navbar">
+       <div class="logo">
+         <a href="homepage.html">
+           <img src="assets/logo-colored.png" alt="" />
+         </a>
+       </div>
+
+       <div class="input-box">
+         <input type="text" placeholder="Search" />
+         <div class="dropdown">
+           <button class="dropbtn">
+             All Category
+             <img src="assets/dropdown-img.png" alt="" />
+           </button>
+           <div class="dropdown-content">
+             <a href="#">Option 1</a>
+             <a href="#">Option 2</a>
+             <a href="#">Option 3</a>
+           </div>
+         </div>
+         <button class="search">Search</button>
+       </div>
+
+       <div class="side-bar">
+         <ul>
+           <li><img src="assets/profile-icon.png" alt="" />Profile</li>
+           <li><img src="assets/messages-icon.png" alt="" />Message</li>
+           <li><img src="assets/order-icon.png" alt="" />Orders</li>
+           <li><img src="assets/my-cart-icon.png" alt="" />My cart</li>
+         </ul>
+       </div>
+     </div>
+     <div class="horizontal-line"></div>
+   </header>
+
+
+<!-- all categories mentioned section -->
+<div class="category-section">
+  <ul>
+    <img src="assets/menu-icon.png" alt="" />
+    <li><a href="gridview.html">All Category</a></li>
+    <li><a href="gridview.html">Hot offers</a></li>
+    <li><a href="gridview.html">Gift boxes</a></li>
+    <li><a href="gridview.html">Projects</a></li>
+    <li><a href="gridview.html">Main item</a></li>
+    <li><a href="gridview.html">Help</a><img style="margin-left: 10px;" src="assets/dropdown-img.png" alt="" /></li>
+  </ul>
+  <div class="btns">
+    <button class="currency">
+      English, USD <img src="assets/dropdown-img.png" alt="" />
+    </button>
+    <button class="shipping">
+      Ship to <img src="assets/belgium-flag.png" alt="" />
+      <img src="assets/dropdown-img.png" alt="" />
+    </button>
+  </div>
+</div>
+</section>
+<div class="horizontal-line"></div>
+
+<div class="bg-grey">
+  <div class="selected-categories">
+    <p id="selected-categories-p">Home > Clothings > Men's wear > Summer clothing > </p>
+  </div>
+
+  <div class="product-container">
+    <!-- Left: Product Images -->
+    <div class="product-images">
+        <img src="assets/product-detail/image 34.png" alt="Product" class="main-image">
+        <div class="thumbnails">
+            <img src="assets/product-detail/Image.png" class="thumb">
+            <img src="assets/product-detail/Image.png" class="thumb">
+            <img src="assets/product-detail/Image.png" class="thumb">
+            <img src="assets/product-detail/Image.png" class="thumb">
+            <img src="assets/product-detail/Image.png" class="thumb">
+        </div>
+    </div>
+
+    <!-- Middle: Product Info -->
+    <div class="product-info">
+        <p class="stock-status">✔ In stock</p>
+        <h2 class="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h2>
+
+        <!-- Ratings & Reviews -->
+        <div class="ratings">
+            <span class="stars">★★★★☆</span>
+            <span class="score">9.3</span>
+            <span class="reviews">• 32 reviews • 154 sold</span>
+        </div>
+
+        <!-- Pricing -->
+        <div class="price-box">
+            <div class="price-tier">
+                <p class="price">$98.00</p>
+                <p class="pcs">50-100 pcs</p>
+            </div>
+            <div class="price-tier">
+                <p class="price">$90.00</p>
+                <p class="pcs">100-700 pcs</p>
+            </div>
+            <div class="price-tier">
+                <p class="price">$78.00</p>
+                <p class="pcs">700+ pcs</p>
+            </div>
+        </div>
+
+        <!-- Size Selection -->
+        <div class="size-selection">
+            <label for="size">Select Size:</label>
+            <select id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <p><strong>Price:</strong> Negotiable</p>
+            <p><strong>Type:</strong> Classic shoes</p>
+            <p><strong>Material:</strong> Plastic material</p>
+            <p><strong>Design:</strong> Modern nice</p>
+            <p><strong>Customization:</strong> Customized logo and design custom packages</p>
+            <p><strong>Protection:</strong> Refund Policy</p>
+            <p><strong>Warranty:</strong> 2 years full warranty</p>
+        </div>
+    </div>
+
+    <!-- Right: Seller Information -->
+    <div class="seller-info">
+        <div class="seller-box">
+            <p class="seller-title">Supplier</p>
+            <p class="seller-name">Guanqi Trading LLC</p>
+            <p class="seller-location"><img src="assets/belgium-flag.png" alt=""> Germany, Berlin</p>
+            <p class="verified">✔ Verified Seller</p>
+            <p class="shipping">🌍 Worldwide shipping</p>
+
+            <button class="inquiry-btn">Send Inquiry</button>
+            <button class="profile-btn">Seller's Profile</button>
+            <p class="save-later"><img src="assets/like-icon.png" alt=""> Save for later</p>
+        </div>
+    </div>
+</div>
+
+<div class="product-page-container">
+  <!-- Product Details Section (70%) -->
+  <div class="product-details-container">
+      <!-- Tabs Navigation -->
+      <div class="tabs">
+          <button class="tab active">Description</button>
+          <button class="tab">Reviews</button>
+          <button class="tab">Shipping</button>
+          <button class="tab">About seller</button>
+      </div>
+      <div class="underline"></div>
+
+      <!-- FLEX WRAPPER (Description + Table) -->
+      <div class="product-info-wrapper">
+          <p class="product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas impedit sit error eveniet reprehenderit ipsum soluta tenetur fugiat! Cum, perspiciatis ipsum! Magnam soluta vel saepe tempore eius vitae natus corrupti ad labore, quas reprehenderit magni necessitatibus possimus minus temporibus autem odio ex, earum, alias cupiditate aliquid tenetur ipsam iure! Ad sint maiores modi maxime numquam.
+          </p>
+
+          <table class="product-specs">
+              <tr>
+                  <th>Model</th>
+                  <td>#8786867</td>
+              </tr>
+              <tr>
+                  <th>Style</th>
+                  <td>Classic style</td>
+              </tr>
+              <tr>
+                  <th>Certificate</th>
+                  <td>ISO-889321212</td>
+              </tr>
+              <tr>
+                  <th>Size</th>
+                  <td>34mm x 450mm x 19mm</td>
+              </tr>
+              <tr>
+                  <th>Memory</th>
+                  <td>36GB RAM</td>
+              </tr>
+          </table>
+          <ul class="features-list">
+            <li>✅ Some great feature name here</li>
+            <li>✅ Lorem ipsum dolor sit amet</li>
+            <li>✅ Duis aute irure dolor in reprehenderit</li>
+            <li>✅ Some great feature name here</li>
+        </ul>
+      </div>
+  </div>
+
+  <!-- "You May Like" Section (30%) -->
+  <div class="you-may-like-container">
+    <h3>You may like</h3>
+    
+    <div class="you-may-like-products">
+        <div class="product">
+            <img src="assets/Recommended Items/coat.png" alt="Product">
+            <div class="product-info">
+                <p class="product-title">Men Blazers Sets Elegant Formal</p>
+                <p class="price-2">$7.00 - $39.50</p>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="assets/Recommended Items/tshirt.png" alt="Product">
+            <div class="product-info">
+                <p class="product-title">Men Shirt Sleeve Polo Contrast</p>
+                <p class="price-2">$7.00 - $39.50</p>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="assets/Recommended Items/coat.png" alt="Product">
+            <div class="product-info">
+                <p class="product-title">Apple Watch Series Space Gray</p>
+                <p class="price-2">$7.00 - $39.50</p>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="assets/Recommended Items/brown-jacket.png" alt="Product">
+            <div class="product-info">
+                <p class="product-title">Basketball Crew Socks Long Stuff</p>
+                <p class="price-2">$7.00 - $39.50</p>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="assets/Recommended Items/bag.png" alt="Product">
+            <div class="product-info">
+                <p class="product-title">New Summer Men's Casual T-Shirts</p>
+                <p class="price-2">$7.00 - $39.50</p>
+            </div>
+        </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="footer-box">
+
+    <div class="social-media-icons">
+      <img width="" src="assets/logo-colored.png" alt="">
+      <p>Best information about the company gies here but now lorem ipsum is</p>
+      <div class="icons">
+        <li><img src="assets/insta-icon.png" alt=""></li>
+        <li><img src="assets/yt-icon.png" alt=""></li>
+        <li><img src="assets/facebook-icon.png" alt=""></li>
+        <li><img src="assets/twitter-icon.png" alt=""></li>
+        <li><img src="assets/linkedin-icon.png" alt=""></li>
+      </div>
+    </div>
+    <div class="headings">
+      <div class="content">
+          <div class="about">
+              <h4>About</h4>
+              <ul>
+                  <li>About us</li>
+                  <li>Find store</li>
+                  <li>Categories</li>
+                  <li>Blogs</li>
+              </ul>
+          </div>
+          <div class="partnership">
+              <h4>Partnership</h4>
+              <ul>
+                  <li>About us</li>
+                  <li>Find store</li>
+                  <li>Categories</li>
+                  <li>Blogs</li>
+              </ul>
+          </div>
+          <div class="information">
+              <h4>Information</h4>
+              <ul>
+                  <li>Money refund</li>
+                  <li>Shipping</li>
+                  <li>Contact us</li>
+                  <li>Blogs</li>
+              </ul>
+          </div>
+          <div class="for-users">
+              <h4>For users</h4>
+              <ul>
+                  <li>Login</li>
+                  <li>Register</li>
+                  <li>Settings</li>
+                  <li>My orders</li>
+              </ul>
+          </div>
+          <div class="get-app">
+              <h4>Get app</h4>
+              <img src="assets/appstore-button.png" alt="">
+              <img src="assets/android-button.png" alt="">
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="copyright-footer">
+      <p>&copy 2023 Ecommerce.</p>
+      <div><img src="assets/usa-flag.png" alt="">English <img src="assets/dropdown-img.png" alt=""></div>
+  </div>
+  <div>
+ </footer>
+
+
+
+
+<!-- bg-grey -->
+</div>
+<!-- container -->
+</div>
+<script src="script.js"></script> 
+</body>
+</html>
