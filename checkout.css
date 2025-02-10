@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+}
+body{
+  background-color:white;
+  position: absolute;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.bg-grey{
+  background-color: white;
+}
+
+/* Navbar started */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 5vw;
+  width: 83vw;
+  background-color: white;
+  align-items: center;
+}
+.logo {
+  margin: 25px;
+}
+
+
+.horizontal-line {
+  width: 100vw; 
+  height: 1px; 
+  background-color: rgb(226, 224, 224); 
+  margin: 0; 
+  padding: 0; 
+}
+
+/* main container */
+.checkout-container {
+    display: flex;
+}
+
+.form-section {
+    width: 54vw;
+    padding: 20px;
+    border: 1px solid rgb(226, 224, 224) ;
+}
+
+.summary-section {
+    width: 39vw;
+    padding: 20px;
+    border:1px solid rgb(226, 224, 224) ;
+}
+
+.cart-summary {
+    width: 100%;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-meta {
+    font-size: 14px;
+    color: gray;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.discount {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.discount input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.apply-btn {
+    background: #ddd;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.price-breakdown {
+    margin-top: 15px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    gap: 152px;
+}
+
+.tooltip {
+    font-size: 12px;
+    background: gray;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 19px;
+    margin: 15px 200px;
+    color: #181818;
+    text-decoration: underline;
+}
+
+.total-amount {
+    color: black;
+}
+
+/* delivery form */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+input, select {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn:hover {
+    background: #333;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+.error-border {
+    border: 2px solid red !important;
+    background-color: #ffe6e6;
+}
+.payment-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+}
+.payment-box label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+.payment-box input {
+    margin-right: 10px;
+}
+.card-icons {
+    margin-left: auto;
+}
+.card-icons img {
+    height: 20px;
+    margin-left: 5px;
+}
+.credit-card-fields {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+.paypal-info {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+.error-border {
+    border: 1px solid red !important;
+  }
+  
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .success {
+    color: green;
+  }
+
+  .error {
+    border: 2px solid red !important;
+    background-color: #ffe6e6;
+}
+
+  .loading {
+    color: #3498db;
+  }

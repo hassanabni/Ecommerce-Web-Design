@@ -176,4 +176,39 @@ const removeAllBtn = document.querySelector(".remove-btn");
     });
 
     updateTotals();
+
+    document.querySelector(".checkout-btn").addEventListener("click", function () {
+        let cartItems = [];
+    
+        document.querySelectorAll(".cart-product").forEach((product) => {
+            const imageSrc = product.querySelector(".cart-product-info img").src;
+            const productTitle = product.querySelector(".cart-product-name").textContent;
+            const priceText = product.querySelector(".price").textContent.replace("$", "");
+            const price = parseFloat(priceText);
+            const quantity = parseInt(product.querySelector('input[type="number"]').value) || 1;
+            const size = product.querySelector("select[name='size']").value;
+    
+            cartItems.push({
+                image: imageSrc,
+                title: productTitle,
+                price: price,
+                quantity: quantity,
+                size: size
+            });
+        });
+    
+        // Check if the cart is empty
+        if (cartItems.length === 0) {
+            alert("Your cart is empty! Add some items before proceeding to checkout.");
+            return; // Stop further execution
+        }
+    
+        // Store cart data in localStorage
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+    
+        // Redirect to the checkout page
+        window.location.href = "checkout.html";
+    });
+    
 });
+
