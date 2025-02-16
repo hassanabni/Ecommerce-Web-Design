@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "hassann.tehseen@gmail.com",
+      "password": "123456778",
+      "shippingAddress": ""
+    },
+    {
+      "id": "58f7",
+      "name": "MUHAMMAD HASSAN",
+      "email": "elmerheinrich@gmail.com",
+      "password": "yahya444",
+      "shippingAddress": ""
+    },
+    {
+      "id": "4ab7",
+      "name": "MUHAMMAD HASSAN",
+      "email": "hassantehseen247@gmail.com",
+      "password": "yahya456",
+      "shippingAddress": ""
+    },
+    {
+      "id": "11ac",
+      "name": "MUHAMMAD HASSAN",
+      "email": "hassan@gmail.com",
+      "password": "321123",
+      "shippingAddress": ""
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 1,
+      "date": "2023-10-01",
+      "total": 59.99,
+      "status": "Delivered"
+    }
+  ]
+}

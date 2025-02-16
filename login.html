@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Authentication</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+           <div class="logo">
+             <a href="homepage.html">
+               <img src="assets/logo-colored.png" alt="" />
+             </a>
+           </div>
+   
+           
+           
+         </div>
+         <div class="horizontal-line"></div>
+       </header>
+       <div class="auth-container">
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form">
+          <h2>Welcome Back!</h2>
+          <div class="message" id="loginMessage"></div>
+          <!-- Add id attributes to inputs -->
+          <input type="email" id="loginEmail" placeholder="Email" required>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <div class="forgot-password">
+            <a href="forgot.html">Forgot Password?</a>
+          </div>
+          <button type="submit">Sign In</button>
+          <p class="switch-form">Don't have an account? <a href="#" onclick="showForm('register')">Create Account</a></p>
+        </form>
+    
+        <form id="registerForm" class="auth-form">
+          <h2>Create Account</h2>
+          <div class="message" id="registerMessage"></div>
+          <input type="text" name="name" placeholder="Full Name" required>  <!-- Added name="name" -->
+          <input type="email" name="email" placeholder="Email" required>   <!-- Added name="email" -->
+          <input type="password" name="password" placeholder="Password" required>  <!-- Added name="password" -->
+          <input type="password" name="confirmPassword" placeholder="Confirm Password" required> <!-- Added name="confirmPassword" -->
+          <button type="submit">Sign Up</button>
+          <p class="switch-form">Already have an account? <a href="#" onclick="showForm('login')">Sign In</a></p>
+        </form>
+    
+      <script src="script2.js"></script>
+      <script>
+        // Show appropriate form based on URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const action = urlParams.get('action') || 'login';
+        showForm(action);
+    
+        function showForm(formType) {
+          document.querySelectorAll('.auth-form').forEach(form => 
+            form.classList.remove('active-form'));
+          document.getElementById(`${formType}Form`).classList.add('active-form');
+        }
+      </script>
+</body>
+</html>
