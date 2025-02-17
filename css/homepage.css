@@ -141,6 +141,7 @@ body{
 }
 .currency {
   margin-right: 28px;
+  color: #000000;
   background: none;
   border: none;
   padding: 0;
@@ -149,6 +150,7 @@ body{
 }
 .shipping {
   margin-right: 54px;
+  color: #000000;
   background: none;
   border: none;
   padding: 0;
@@ -348,7 +350,7 @@ font-weight: bolder;
   
     .dropbtn {
       font-size: 14px;
-      padding: 12px 8px;
+      padding: 13px 8px;
     }
   
     .search {
@@ -1303,3 +1305,79 @@ font-weight: bolder;
     font-size: 10px;
   }
 }
+/* darkmode
+#darkModeToggle{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+:root {
+  --background-color: white;
+  --text-color: #000000;
+  --header-bg-color: #f8f9fa;
+  --footer-bg-color: #f8f9fa;
+  --button-bg-color: black;
+  --button-text-color: #ffffff;
+  --card-bg-color: #ffffff;
+  --card-text-color: #000000;
+  --input-bg-color: #ffffff;
+  --input-text-color: #000000;
+  --border-color: #dee2e6;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --header-bg-color: #1e1e1e;
+  --footer-bg-color: #1e1e1e;
+  --button-bg-color: #bb86fc;
+  --button-text-color: #000000;
+  --card-bg-color: #1e1e1e;
+  --card-text-color: #ffffff;
+  --input-bg-color: #333333;
+  --input-text-color: #ffffff;
+  --border-color: #444444;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--header-bg-color);
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+}
+
+input {
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  border-color: var(--border-color);
+}
+.footer-box {
+  background-color: var(--footer-bg-color);
+  color: var(--text-color);
+}
+.bg-color{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.deals-container{
+  background-color: var(--background-color);
+    color: var(--text-color);
+} */
+/* Add more specific styles as needed */

@@ -363,13 +363,10 @@ body{
   width: 19vw;
   cursor: pointer;
 }
-.product-card:hover{
-  background-color: rgb(237, 230, 230);
-}
-
 
 .product-card .product-image {
   margin-bottom: 10px;
+  height: 140px;
 }
 
 .product-title {

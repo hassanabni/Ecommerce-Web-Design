@@ -474,15 +474,14 @@ body{
   gap: 10px;
   cursor: pointer;
 }
-.product-card-list:hover{
-  background-color: rgb(237, 230, 230);
-}
 
 
 .product-image-list {
   border-radius: 5px;
   object-fit: cover;
   margin:0px 40px;
+  width: 139px;
+  height: 172px;
 }
 
 .product-info {
@@ -532,6 +531,7 @@ body{
   color: #007bff;
   font-weight: bold;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .wishlist-button {
